@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .clear {
+      clear: both;
+    }
+    #page {
+      text-align: center;
+      width: 1500px;
+      margin: auto;
+      border : 0px solid #dddddd;
+      font-weight: bold;
+    }
+
+    header {
+      width: 1500px;
+      height: 100px;
+      margin-top: 10px;
+      border-bottom:2px solid #dddddd;
+    }
+    nav {
+      width: 1500px;
+      height: 70px;
+      margin-top: 10px;
+      font-size: 20px;
+      border-bottom: 2px solid #dddddd;
+    }
+    nav span{
+      color : #21A089;
+    }
+    nav li{
+      display: inline-block;
+      margin: 30px 30px;
+    }
+    section {
+      float: left;
+      text-align: left;
+      margin-top: 10px;
+    }
+    aside {
+      float: right;
+      margin-top: 10px;
+    }
+    aside li{
+      text-align: right;
+      margin-bottom: 30px;
+    }
+    article {
+      float: left;
+      width: 1050px;
+      margin-left: 30px;
+    }
+    #sub1 {
+      float: left;
+      width: 300px;
+      text-align: left;
+      overflow: hidden;
+    }
+    #sub1 div{
+      width: 300px;
+      padding-top:15px;
+      padding-bottom: 15px;
+      padding-left: 10px;
+      border-bottom: 1px solid #eeeeee;
+      font-size: 17px;
+
+    }
+    #sub1 div ul{
+      background-color: #F5F6FA;
+      padding-top: 10px;
+      padding-bottom:10px;
+    }
+    #sub1 div ul li{
+      margin-top: 5px;
+      margin-bottom: 5px;
+      font-size: 16px;
+    }
+    #sub1 h1{
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #888888;
+      color : #888888;
+    }
+    #p1 {
+      background: #21A089;
+      color : white;
+    }
+    #sub2 {
+      float: right;
+    }
+    #sub3 {
+      float: right;
+    }
+
+    footer {
+      width: 1500px;
+      height: 100px;
+      margin-top: 20px;
+    }
+    #fot li {
+      display: inline-block;
+      margin-right: 25px;
+      margin-top: 15px;
+      margin-bottom: 30px;
+      font-size: 16px;
+    }
+    #logo { float: left; margin-top: 10px;}
+    #top {
+      float: right;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      margin-right: 10px;
+    }
+    #bb {
+      float: right;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      margin-right: 120px;
+    }
+    #cc li{
+      display: inline-block;
+    }
+    #hh1 {
+      font-size: 25px;
+      font-weight: bold;
+      text-align: left;
+      border-bottom: 2px solid #333333;
+      padding-bottom: 9px;
+
+    }
+    #hh2{
+      margin-top: 10px;
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #dddddd;
+    }
+    #cc1{
+      text-align: center;
+    }
+    #cc1 table {
+      margin-left: 50px;
+    }
+    #cc1 table td {
+      width: 300px;
+      height: 70px;
+      background-color: #F5F6FA;
+      border: 2px solid #cccccc;
+      font-weight: bold;
+    }
+    #nn1 {
+      color:#043763;
+      box-shadow: 0px 3px 3px black;
+    }
+    #kk1 {
+      margin-left: 10px;
+      margin-right: 40px;
+    }#kk2 {
+      margin-left: -40px;
+      margin-right: -50px;
+    }
+    #kk1 li {
+      display: inline-block;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+    #kk2 li {
+      display: inline-block;
+      padding : 10px 20px 10px 20px;
+      border: 1px solid #043763;
+      color : #043763;
+      margin-left: 50px;
+      margin-right: 110px;
+      margin-top: 15px;
+      margin-bottom: 80px;
+      transition: background 0.2s,color 0.2s;
+    }
+    #kk2 li:hover{
+      background: #043763;
+      color: white;
+    }
+    #p2 {
+      padding-left: 30px;
+    }
+    #pp1:hover{
+      text-decoration: underline;
+    }
+    #pp2:hover{
+      text-decoration: underline;
+      font-size: 17px;
+    }
+    #pp3:hover{
+      text-decoration: underline;
+      font-size: 17px;
+    }
+    #pp4:hover{
+      text-decoration: underline;
+      font-size: 17px;
+    }
+    #n1:hover{
+      background: #dddddd;
+    }
+    #n2:hover{
+      background: #dddddd;
+    }
+    #n3:hover{
+      background: #dddddd;
+    }
+    #n4:hover{
+      background: #dddddd;
+    }
+    #n5:hover{
+      background: #dddddd;
+    }
+    </style>
+    <title></title>
+  </head>
+  <body id="page">
+<header>
+  <div id="logo">
+   <a href="index.html"><img src="img2/kcdc.PNG"></a>
+ </div>
+ <div id="top">
+   로그인 | 회원가입 | <a href="mypage.html">마이페이지</a> | 고객센터
+ </div>
+</header>
+<div class="clear"></div>
+<nav>
+  <ul>
+  <li> 감염병 </li>
+  <li> 건강정책 </li>
+  <span><li style="border-bottom: 2px solid #21A089;"> 정책정보 </li></span>
+  <li> 연구개발 </li>
+  <li> 알림,자료 </li>
+  <li> 간행물,통계 </li>
+  <li> 민원,정보공개 </li>
+  <li> 기관소개 </li>
+  <li> 사업별홈페이지 </li>
+  </ul>
+</nav>
+<div class="clear"></div>
+<section id="bb">
+  <ul id="cc">
+    <li>Home</li>
+  <li> >정책정보</li>
+  <li> >기후변화</li>
+<li>   >폭염> </li>
+  <li style="color:#21A089; "> 건강수칙홍보자료</li>
+  </ul>
+</section>
+<div class="clear"></div>
+<aside>
+   <img src="img2/aside.PNG">
+</aside>
+
+<section id="sub1">
+  <h1>정책정보</h1>
+    <div> 감염병</div>
+     <div>생물안전</li></div>
+  <div id="p1"> 기후변화</div>
+      <div><ul id="p2">
+        <li id="pp1" style="color: #21A089; ">폭염 -</li>
+        <li id="pp2">한파</li>
+        <li id="pp3">미세먼지</li>
+        <li id="pp4">기후변화건강적응대책</li></ul>
+      </div>
+<div>의료방사선안전관리</div>
+<div>장기.조직.혈액관리</div>
+</section>
+<article>
+  <div id="hh1">폭염 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <img src="img2/ar1.PNG" id="ddd1"><img src="img2/ar2.PNG" id="ddd2"></div>
+    <div id="hh2">
+      <img src="img2/bbb1.PNG">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      <img src="img2/bbb2.PNG">
+    </div>
+    <div id="cc1">
+    <table>
+      <tr><td id="n1">감시체계신고현황</td>
+      <td id="n2">감시체계상세신고결과</td>
+      <td id="n3">온열질환종류및응급조치</td></tr>
+      <tr><td id="nn1" style="background:white;
+        border: 2px solid #043763;">건강수칙홍보자료</td>
+      <td id="n4"><a href="pt.html">보도및기타발간자료</a></td>
+      <td id="n5">감시체계연보</td></tr>
+    </table>
+      </div>
+      <div>
+        <ul id="kk1">
+    <li><img src="img2/foster1.PNG"></li>
+    <li><img src="img2/foster2.PNG"></li>
+    <li><img src="img2/foster3.PNG"></li>
+  </ul>
+  <ul id="kk2">
+<li style="margin-left:50px; margin-right:100px;">포스터 바로가기 ></li>
+<li style="margin-left:30px;">FAQ 바로가기 ></li>
+<li style="margin-left:55px;">카드뉴스 ></li>
+</ul>
+      </div>
+</article>
+<div class="clear"></div>
+<footer>
+  <ul id="fot">
+    <li style="font-weight: bold;">관련링크 < ></li>
+    <li>임상진료지침 디지털 가이드라인</li>
+    <li>KoGES</li>
+    <li>질병관리본부국제학술지(Osong PHRP)</li>
+    <li>만성신장병코호트연구</li>
+    <li>국민건강영양조사</li>
+    <li>국립의과학지식센터</li>
+    <li>보건복지통계</li>
+  </ul>
+<div style="background:#F5F6FA;">
+<img src="img2/footer2.PNG" width="1300">
+</div>
+</footer>
+
+  </body>
+</html>
